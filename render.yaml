@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: movilnet-pwa-whatsapp
+    runtime: static
+    plan: free
+    buildCommand: ""
+    staticPublishPath: ./
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /*
+        name: Access-Control-Allow-Origin
+        value: "*"
+      - path: /sw.js
+        name: Cache-Control
+        value: "no-cache, no-store, must-revalidate"
+      - path: /manifest.json
+        name: Cache-Control
+        value: "no-cache, no-store, must-revalidate"
