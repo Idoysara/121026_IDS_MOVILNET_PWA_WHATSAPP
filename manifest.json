@@ -1,0 +1,32 @@
+{
+  "name": "MOVI — WhatsApp Movilnet 4GMAX",
+  "short_name": "MOVI",
+  "description": "Asistente Oficial Conversacional de Movilnet 4GMAX en Interfaz Nativa de WhatsApp.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0b141a",
+  "theme_color": "#202c33",
+  "categories": ["business", "communication", "utilities"],
+  "icons": [
+    {
+      "src": "./assets/logos/boton_4gmax_oficial.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/logos/logo_small.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/logos/logo_oficial.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
